@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 1rem;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+
+  border-radius: 1rem;
+  border: 1px solid var(--gray-04);
+  background: var(--gray-06);
+  cursor: pointer;
+}
+
+.iconAndText {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.backgroundImageIcon {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  border-radius: 1rem;
+  border: 1px solid var(--gray-05);
+  background: var(--gray-06);
+}
+
+.textButton {
+  color: var(--gray-02);
+  font-family: IBM Plex Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
