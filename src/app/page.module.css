@@ -3,18 +3,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4.2rem 7rem;
+  padding: 2rem;
 }
 
 .box {
   display: flex;
-  /* width: 76rem; */
+  width: 60rem;
   padding: 3.75rem;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 
   border-radius: 2rem;
   border: 1px solid var(--gray-04, #334155);
   background: rgba(2, 6, 23, 0.8);
+}
+
+.divider {
+  width: 100%;
+  border: 0.0625rem solid var(--gray-04);
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 100%;
+  }
 }
