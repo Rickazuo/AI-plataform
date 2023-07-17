@@ -2,7 +2,6 @@
   display: flex;
   width: 75%;
   flex-direction: column;
-  /* align-items: flex-start; */
   gap: 1rem;
 }
 .button {
@@ -16,6 +15,13 @@
   border: 1px solid var(--gray-04);
   background: var(--gray-06);
   cursor: pointer;
+  animation: leftCenter 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  filter: brightness(150%);
 }
 
 .iconAndText {
@@ -42,4 +48,27 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@keyframes leftCenter {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .iconAndText {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
